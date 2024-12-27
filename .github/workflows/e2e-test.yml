@@ -55,10 +55,3 @@ jobs:
         run: >
           mkdir -p "screenshots" && find "screenshots" -mindepth 1 -maxdepth 1 -type d
           -exec sh -c 'mv -- "videos/$(basename "$1").mp4" "$1"' _ {} \;
-
-      - name: Upload cypress artifacts
-        if: failure() && (steps.test-suite.outcome == 'failure')
-        uses: actions/upload-artifact@v2
-        with:
-          name: cypress-artifacts-node${{ matrix.node-version }}
-          path: test/e2e/screenshots
