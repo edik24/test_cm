@@ -1,6 +1,6 @@
 const UserDAO = require("./user-dao").UserDAO;
 
-/* The AllocationsDAO must be constructed with a connected database object */
+/* The AllocationsDAO must be constructed with a connected database object TTTT */
 const AllocationsDAO = function(db){
 
     "use strict";
