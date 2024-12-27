@@ -5,7 +5,7 @@ function ContributionsDAO(db) {
     "use strict";
 
     /* If this constructor is called without the "new" operator, "this" points
-     * to the global object. Log a warning and call it correctly. */
+     * to the global object. Log a warning and call it correctly. TESTTTTT*/
     if (false === (this instanceof ContributionsDAO)) {
         console.log("Warning: ContributionsDAO constructor called without 'new' operator");
         return new ContributionsDAO(db);
