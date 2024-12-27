@@ -4,7 +4,7 @@ function ProfileDAO(db) {
     "use strict";
 
     /* If this constructor is called without the "new" operator, "this" points
-     * to the global object. Log a warning and call it correctly. */
+     * to the global object. Log a warning and call it correctly. ttttttt*/
     if (false === (this instanceof ProfileDAO)) {
         console.log("Warning: ProfileDAO constructor called without 'new' operator");
         return new ProfileDAO(db);
