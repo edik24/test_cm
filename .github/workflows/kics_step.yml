@@ -14,7 +14,7 @@ jobs:
         run: mkdir -p results-dir
       # Scan Iac with kics
       - name: run kics Scan
-        uses: checkmarx/kics-github-action@latest
+        uses: checkmarx/kics-github-action@v2.1.3
         with:
           path: 'terraform'
           output_path: results-dir
