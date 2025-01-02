@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt-nodejs");
 
-/* The UserDAO must be constructed with a connected database object */
+/* The UserDAO must be constructed with a connected database object, add comment */
 function UserDAO(db) {
 
     "use strict";
